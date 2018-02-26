@@ -1,0 +1,30 @@
+mixin header()
+	header
+		.nav_wrap
+			.logo
+				h1 
+					span UP
+					|QODE
+			.burger &#9776;
+			nav
+				ul.menu.mobile
+					li: a(href="#banner") Home
+					li: a(href="#whyus") Why Us
+					li
+						a(href="#products") Products
+						ul.sub-menu
+							li: a(href="") Name Surname
+							li: a(href="") Nelson Noa Chris
+							li
+								a(href="") Name Surname
+								ul.suber-menu
+									li: a(href="") Name Surname
+									li: a(href="") Nelson Noa Chris
+									li: a(href="") Name Surname
+									li: a(href="") Nelson Noa 
+							li: a(href="#") Nelson Noa 
+					li: a(href="#about") About
+					li: a(href="#contact") Contact
+
+				.search_bg
+					input(type="search")

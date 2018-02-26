@@ -1,0 +1,93 @@
+#whyus 
+	.title
+		text-align: center
+
+		h1 
+			font-size: 64px
+			font-family: 'Lato Bold'
+			text-transform: uppercase
+			color #232323
+			span 
+				color #009dda
+		p 	
+			margin: 0 auto
+			font-family: 'Lato Regular'
+			font-size: 16px
+			color #b8b8b8
+			line-height: 1.875;
+			max-width 674px
+
+	.list
+		margin-top: 90px
+		margin-bottom: 120px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		.item
+			border 1px solid rgb(235, 235, 235)
+			width: 198px;
+			height: 268px;
+			margin 18px
+			position: relative
+			
+			.icon
+				display: flex
+				justify-content: center
+				height 118px
+				align-items: center
+				svg 
+					width 60px
+					height 60px
+			.info
+				text-align: center
+				height: 150px
+				h3
+					text-transform: uppercase
+					font-family: 'Lato Heavy'
+					font-size: 14px
+					padding: 25px 0
+					margin: 0
+				p 
+					font-family: 'Lato Light'
+					color #7f7f7f
+					font-size: 14px
+					padding: 0 20px
+					margin: 0
+			.seemore
+				display: none
+			&:hover
+				.info
+					display none
+				.seemore
+					display: flex
+					flex-direction: column
+
+					height: 150px
+					width 100%
+					background-color: #503392
+					h3
+						text-align: center
+						text-transform: uppercase
+						font-family: 'Lato Heavy'
+						font-size: 14px
+						padding: 25px 0
+						margin: 0
+						color #fff
+					.seemore_icon
+						display: flex
+						justify-content: center
+						a
+							margin: 0 10px;
+							justify-content: center;
+							display: flex;
+							border: 1px solid #ffffff;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%
+							svg 
+								width 20px
+						a:hover
+							background: #ffffff
+							svg > path
+								fill: #503392 !important

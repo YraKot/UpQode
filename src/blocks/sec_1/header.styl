@@ -1,0 +1,144 @@
+header 
+	padding 0 17%
+	position: fixed
+	top 0
+	background: #fff
+	width 100%
+	z-index: 800
+	height 70px
+	.nav_wrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		position relative
+
+		.logo
+			h1
+				font-family: 'Beyno';
+				color: #009dda
+				span 
+					color #503392
+
+		.search_bg 
+			input 
+				background: #503392
+				opacity: 0.2;
+				width: 180px;
+				height: 31px;
+				border none
+		.burger 
+			display: none
+			position absolute
+			top 0
+			right 10%
+			cursor pointer
+			font-size: 30px
+		nav 
+			display flex
+			flex-direction: row
+			align-items: center
+			
+			ul 
+				padding: 0
+				margin: 0
+				display none
+			
+			.open 
+				height 100%
+				width 100%
+			.menu
+				display: flex
+				flex-direction: column
+
+				li 
+					display:block;
+					list-style-type:none;
+					text-transform:uppercase;
+
+					a 
+						text-transform: none
+						display:flex;
+						text-align:center;
+						text-decoration:none;
+						padding: 20px 0
+						font-family: 'Lato Regular'
+						font-size: 16px
+						line-height: 1.5
+						cursor pointer
+						margin-right: 40px
+						color #777777
+						&.active 
+							color: #232323;
+							font-family: 'Lato Bold'
+				
+					&:hover 
+						.sub-menu
+							padding: 30px
+							display:block;
+							color:#fff;
+							position absolute
+							background: rgba(0,0,0,0.65)
+							border-top 2px solid #fff200
+							li 
+								display: flex 
+								padding: 0
+								a 
+									margin: 0
+									padding: 10px 0
+									color #fdfdfd
+									&:hover
+										color #fff200
+										&:before
+											content: '\000BB'
+									&:before
+										content: '\0203A'
+										padding-right: 5px
+							.suber-menu
+								padding: 30px
+								width 100%
+								display:block;
+								color:#fff;
+								position absolute
+								left 0
+								background: rgba(0,0,0,0.65)
+								border-top 2px solid #fff200
+								margin: 0 0 0 100%
+								li 
+									width 100%
+
+
+@media (max-width: 1366px)
+	header 
+		padding 0 !important
+
+@media (min-width: 800px)
+	.menu
+		flex-direction: row !important
+		justify-content:space-between;
+
+
+@media screen and (max-width: 1024px)
+	.nav_wrap
+		position: relative
+		display: block !important
+		.logo
+			text-align: center
+		.burger 
+			display: block !important
+		nav 
+			margin-top: -5px
+			
+			.menu
+				align-items: center
+				overflow hidden
+				height 0
+				width 100%
+				overflow hidden
+				background-color: #ffffff
+				a
+					color #111111
+
+		.search_bg
+			display: none !important

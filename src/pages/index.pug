@@ -1,0 +1,21 @@
+extends layout/main.pug
+
+include ../blocks/sec_1/header.pug
+include ../blocks/sec_2/banner.pug
+include ../blocks/sec_3/whyus.pug
+include ../blocks/sec_4/products.pug
+include ../blocks/sec_5/about.pug
+include ../blocks/sec_6/contact.pug
+
+
+
+block title
+    title Home page
+    
+block content
+    +header()
+    +banner()
+    +whyus()
+    +products()
+    +about()
+    +contact()

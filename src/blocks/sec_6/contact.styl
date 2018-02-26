@@ -1,0 +1,196 @@
+#contact
+	.title
+		margin-top: 150px
+		text-align: center
+		h1
+			text-transform: uppercase
+			color #232323
+			font-family: "Lato Bold"
+			font-size: 35px
+			margin: 0
+			padding-bottom: 30px
+			span 
+				color #009dda
+		p 
+			font-size: 14px;
+			font-family: "Lato Regular";
+			color: #999999;
+			line-height: 1.714;
+			margin: 0
+			padding-bottom: 80px
+	.contact_wrap
+		height: 634px;
+		position relative
+		#map
+			position: absolute
+			width: 100%
+			height: 100%
+			z-index: 1
+
+		.overlay_map
+			background-color: rgba(0, 0, 0,0.651);
+			height 100%
+			width 100%
+			position: absolute
+			z-index: 2
+		.contact_form_wrap
+			background-color: rgba(26, 26, 26, 0.529);
+			width: 945px;
+			height: 435px;
+			position: absolute;
+			top 50%
+			left 50%
+			transform: translate(-50%, -50%) 
+			z-index: 2; 
+			.contact_form
+				padding: 80px 60px
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+
+				.form
+					width 60%
+					.name_email
+						display: flex
+						flex-wrap: wrap
+						// justify-content: space-between
+
+						input[type=text], input[type=email]
+							border 1px solid rgb(255,255,255)
+							width: 236px;
+							// height: 48px;
+							font-size: 16px
+							background: transparent
+							padding: 18px 20px
+							margin-bottom: 14px
+							color white
+							&:first-child
+								margin-right: 14px
+
+					textarea
+						width: 488px;
+						height: 142px;
+						background: transparent
+						font-size: 18px
+						padding: 18px 20px
+						border 1px solid rgb(255,255,255)
+						color white
+
+					.send_wrap
+						margin-top: 14px
+						display: flex
+						justify-content: space-between
+						align-items: center
+						flex-direction: row
+						
+
+						.checkbox_wrap
+							// border 1px solid red
+							display: flex
+							align-items: center
+							.checked input 
+								position relative
+								left -999em
+								z-index  -999
+								margin: 0
+								padding: 0
+								width 0
+							.checked span 
+								height: 20px;
+								width: 20px;
+								border: 1px solid rgb(255,255,255)
+								display: inline-block;
+								position: relative;
+								margin-right: 15px
+							.checked input[type=checkbox]:checked + span:after
+								content: "\2714"
+								position: absolute
+								top 0
+								left 4px
+								font-size: 20px
+								color white
+							label
+								color white
+						.send
+							input[type=submit]
+								background-color: #ffff00
+								width 120px
+								padding: 20px 0
+								font-size: 16px
+								border none
+								margin: 0
+						
+				.contact_info_wrap
+					width 40%
+					display: flex
+					justify-content: center
+					.contact_info
+						p 
+							font-size: 16px
+							line-height: 1.5
+							color #e0e0e0
+							font-family: "Lato Regular"
+	footer
+		background-color: #1a1a1a
+		min-height 60px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding 0 30px
+
+		p 
+			margin: 0
+			color #7a7a7a
+			font-size: 16px;
+			font-family: "Lato Regular";
+			line-height: 2.625;
+		.social_icon
+			display: flex
+			flex-direction: row
+			z-index 2
+			a 
+				text-decoration: none	
+				margin: 10px
+				cursor pointer
+
+
+
+@media screen and (max-width: 1024px)
+	.contact_form_wrap
+		width 100% !important
+		.contact_form
+			padding: 5% !important
+			.form
+				textarea 
+					width: 100% !important
+
+@media screen and (max-width: 800px)
+	.contact_form_wrap
+		width 100% !important
+		.form
+			input[type=text], input[type=email]
+				margin-right:  0 !important
+				width 100% !important
+
+@media screen and (max-width: 600px)
+	.contact_wrap
+		height 690px !important
+		.contact_form_wrap
+			height 100% !important
+			.contact_form
+				flex-direction: column !important
+				.form
+					width 100% !important
+				.contact_info_wrap
+					width 100% !important
+	footer
+		flex-direction: column !important
+		justify-content: center
+		align-items: center
+		p
+			text-align: center
+
+@media screen and (max-width: 400px)
+	.contact_info_wrap
+		width 100% !important
